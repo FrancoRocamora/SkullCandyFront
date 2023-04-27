@@ -111,7 +111,7 @@ export const getGenres = () => {
 
 export const searchResults = (name) => {
     return dispatch => {
-        axios.get(`http://localhost:3001/videogames/game?name=${name}`)
+        axios.get(`https://skullcandygamesback.onrender.com/videogames/game?name=${name}`)
         .then(response =>
             {   
                 console.log(name)
