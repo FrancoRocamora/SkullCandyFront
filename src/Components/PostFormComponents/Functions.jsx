@@ -95,7 +95,7 @@ export const validateTags = (form, error, setError) => {
 
 
 export const sendPost =  async (form, func, param) => {
-    const response = await axios.post('http://localhost:3001/videogames', form)
+    const response = await axios.post('https://skullcandygamesback.onrender.com/videogames', form)
     await func(param())
     return response
 }

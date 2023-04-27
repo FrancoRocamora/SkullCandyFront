@@ -34,7 +34,7 @@ export const removeError = () => {
  
 export const getInfo =  () => {
    return dispatch => {
-        axios.get('http://localhost:3001/videogames')
+        axios.get('https://skullcandygamesback.onrender.com/videogames')
         .then(response =>
             {   
                 dispatch({
@@ -48,7 +48,7 @@ export const getInfo =  () => {
 
 export const getMyGames =  () => {
     return dispatch => {
-         axios.get('http://localhost:3001/videogames')
+         axios.get('https://skullcandygamesback.onrender.com/videogames')
          .then(response =>{
              const filterResponse = response.data.filter(games => games.id.length=== 36)
              return  filterResponse}
@@ -98,7 +98,7 @@ export const removeFilteredGames = (genre) => {
 
 export const getGenres = () => {
     return dispatch => {
-        axios.get('http://localhost:3001/genres')
+        axios.get('https://skullcandygamesback.onrender.com/genres')
         .then(response =>
             {   
                 dispatch({
@@ -128,7 +128,7 @@ export const searchResults = (name) => {
 
 export const getGameById =(id) => {
     return dispatch => {
-        axios.get(`http://localhost:3001/videogames/${id}`)
+        axios.get(`https://skullcandygamesback.onrender.com/videogames/${id}`)
         .then(response =>
             {   dispatch({
                 type: 'GET_BY_ID',
