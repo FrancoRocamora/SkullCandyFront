@@ -1,0 +1,102 @@
+
+
+.searchBar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vh;
+    height: 6vh;
+    width: 100%;
+    background-color: #8c52ff25;
+    position:fixed;
+    z-index: 1;
+    
+    
+}
+
+
+.buttonSubmit{
+    
+    background: linear-gradient(120deg,#8c52ff,#00ffc9);
+    background-size: 100% 100%;
+    border-radius: 0.5vh;
+    padding: 0vh 2vh;
+    height: 6vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    border: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button{
+    background: linear-gradient(120deg,#8c52ff,#00ffc9);
+    border-radius: 0.5vh;
+    padding: 0vh 2vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    border:  none;
+    transition-duration: 1s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.active{
+    background: linear-gradient(120deg,#8c52ff,#00ffc9);
+    box-shadow: 0px 0px 10px 2px rgb(235, 233, 233);
+    border-radius: 1vh;
+    padding: 0vh 2vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    border:  none;
+    transition-duration: 1s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input{
+    background-color:rgb(0, 0, 0);
+    border-radius: 0.5vh;
+    padding: 0vh 2vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255,0,207);
+    font-size: 2.5vh;
+    margin-right: 1.5vw;
+    border: none;
+    height: 6vh;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 10px 1px rgb(255,0,207);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input:focus{
+    outline: none;
+}
+
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px 2px black;
+    border-radius: 1vh;
+}
+
+
+
+
+.buttonSubmit:hover{
+    cursor: pointer;
+    animation: border-animation 3s ease infinite;
+}
+
+@keyframes border-animation {
+
+      50% {
+        box-shadow: inset 0px 0px 10px 2px black;
+        border-radius: 1vh;
+      }
+
+}

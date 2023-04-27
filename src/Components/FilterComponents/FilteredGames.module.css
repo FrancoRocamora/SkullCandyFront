@@ -1,0 +1,19 @@
+.gamesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0vh 0vh 2vh 0vh;
+    padding: 3vh;
+
+    min-height: 100vh;;
+}
+
+.background{
+    
+    background-color: rgb(5, 5, 23);
+
+}
+
+.empty{
+    color: white;
+}

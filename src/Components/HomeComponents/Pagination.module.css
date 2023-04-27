@@ -1,0 +1,95 @@
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.majorContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh;
+}
+
+.pages{
+    width: fit-content;
+    cursor: pointer;
+    background-color:rgba(152, 162, 255, 0);
+    box-shadow: inset 0px 0px 3px 3px rgba(3, 3, 3, 0.2);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5vh;
+    padding: 1vh 2vh;
+    margin: 0vh 1vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    color: rgb(255,0,207);
+    transition: 1s;
+    border: 1px solid black;
+}
+
+.pages:hover{
+    
+    border: 1px solid rgb(255,0,207);
+
+}
+
+
+.current{
+    pointer-events: none;
+    width: fit-content;
+    height: 9vh;
+    background-color:rgb(0, 0, 0) ;
+    border: 1px solid rgb(255,0,207);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5vh;
+    margin: 0vh 1vh;
+    padding: 1vh 2vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+   color: rgb(255,0,207);
+
+}
+
+.disable{
+    pointer-events: none;
+    width: fit-content;
+    height: 9vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 1vh;
+    padding: 0vh 2vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+   
+}
+
+.able{
+    width: fit-content;
+    height: 9vh;
+    
+    background-color:  rgba(3, 3, 3, 0.2);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 1vh;
+    padding: 0vh 2vh;
+    text-justify: center;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    color: rgb(255,0,207);
+    transition-duration: 2s;
+}
+
+
+.able:hover{
+    border: 1px solid rgb(255,0,207);
+    cursor: pointer;
+}
+
+
+
+
